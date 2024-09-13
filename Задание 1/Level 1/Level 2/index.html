@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Главная страница</title>
+    </head>
+    <body>
+        <h1>Тестовый сайт</h1>
+        <h2>Список гиперссылок:</h2>
+        <ol>
+            <li><a href="http://kubsu.ru" target="_blank">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+            <li><a href="https://kubsu.ru" target="_blank">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+            <li><a href="https://7dach.ru" target="_blank"><img src="images/image.jpg" alt="flower" width="220" title="7 Dach"></a></li>
+            <li><a href="./about/in.html" target="_blank">Сокращённая ссылка на внутренную страницу</a></li>
+            <li><a href="./index.html" target="_blank">Сокращённая ссылка на главную страницу</a></li>
+            <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://infoneeds.kubsu.ru/infoneeds/guests/courses.jsp?type=spb&cid=5349587&term=3#5349863x" target="_blank">Ссылка с тремя параметрами в URL</a></li>
+            <li><a href="https://www.example.com/products?cat=electronics&id=456" target="_blank">Ссылка с параметром id в URL</a></li>
+            <li><a href="./file0.html" target="_blank">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="./about/about.html" target="_blank">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../lv1.html" target="_blank">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../lv2.html" target="_blank">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li>Эксперимент - процедура, выполняемая для поддержки, опровержения или подтверждения <a href="https://ru.wikipedia.org/wiki/Гипотеза" target="_blank">гипотезы</a> или теории.</li>
+            <li><a href="https://ru.wikipedia.org/wiki/12_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F#:~:text=2011%C2%A0%E2%80%94-,%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1,-%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%20%D0%93%D0%B0%D0%BB%D0%B8%D0%BC%D0%BE%D0%B2%20(%D1%80" target="_blank">Ссылку на фрагмент страницы стороннего сайта</a></li>
+            <li>Ссылка из прямоугольных и круглых областей картинки (HTML-тег map)
+                <br><img src="images/cricket.jpg" width="220" height="220" alt="cricket" usemap="#map">
+            </li>
+            <li><a href target="_blank">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="index.html" target="_blank" rel="nofollow" >Ссылка, по которой запрещён переход поисковикам</a></li>
+            <li><a href="index.html" target="_blank" rel="noindex">Ссылка запрещённая для индексации поисковикам</a></li>
+            <li>
+                Нумерованный список ссылок с подписями title
+                <br>Цветы:
+                <ol>
+                    <li><a href="https://ru.wikipedia.org/wiki/Роза" target="_blank" title="Роза">Роза</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Тюльпан" target="_blank" title="Тюльпан">Тюльпан</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Подсолнечник" target="_blank" title="Подсолнух">Подсолнух</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Лотос" target="_blank" title="Лотос">Лотос</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Сирень" target="_blank" title="Сирень">Сирень</a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://user:password@tavalik.ru/Temp/file.txt" target="_blank">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ol>
+        <map name="map">
+            <area shape="rect" coords="0,0,220,100" href="https://ru.wikipedia.org/wiki/Anabrus_simplex" alt="Прямоугольная область" title="Прямоугольная область" target="_blank">
+            <area shape="circle" coords="100,150,50" href="https://ru.wikipedia.org/wiki/Настоящие_кузнечики" alt="Круглая область" title="Круглая область" target="_blank">
+        </map>
+        <form action="/" method="POST"></form>
+        <div id="form">
+            <h1>Форма <abb>HTML</abb></h1>
+        </div>
+        <label>
+            ФИО<br>
+            <input name="Name"type="text" placeholder="ФИО">
+        </label>
+        <p></p>
+        <label>
+            Телефон<br>
+            <input name="telephone" type="tel" placeholder="Телефон">
+        </label>
+        <p></p>
+        <label>
+            e-mail<br>
+            <input name="field-email" type="email" placeholder="Введите вашу почту">
+        </label>
+        <p></p>
+        <label>
+            Дата рождения<br>
+            <input name="field-date" value="1980-08-08" type="date">
+        </label>
+        <p></p>
+        <label>
+            Пол<br>
+            <input name="Gender" type="radio" checked="checked" value="Мужчина">
+            Мужчина
+            <input name="Gender" type="radio" value="Женщина">
+            Женщина
+        </label>
+        <p></p>
+        <label>
+            Любимый язык программирования<br>
+            <select name="Language" multiple="multiple" size="5">
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+            </select>
+        </label>
+        <p></p>
+        <label>
+            Биография<br>
+            <textarea name="Biography"></textarea>  
+        </label>
+        <p></p>
+        <label>
+            С контрактом ознакомлен(а):
+            <input type="checkbox" name="Sign"> 
+        </label>
+        <p></p>
+        <label>
+            <input type="submit" value="Сохранить">
+        </label>
+        <p></p>
+        </form>
+    </body>
+</html>
